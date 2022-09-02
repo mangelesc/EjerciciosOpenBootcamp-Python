@@ -1,7 +1,7 @@
 from traceback import print_tb
 
 
-class Vehículo():
+class Vehiculo():
     def __init__(self, color, ruedas, puertas):
         self.color = color
         self.ruedas = ruedas
@@ -10,7 +10,7 @@ class Vehículo():
     def __str__(self) :
         return 'Color: {}\nRuedas:{}\nPuertas: {}'.format( self.color, self.ruedas, self.puertas)
 
-class Coche(Vehículo):
+class Coche(Vehiculo):
     def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
         super().__init__(color, ruedas, puertas)
 
@@ -21,7 +21,7 @@ class Coche(Vehículo):
         return 'Color: {}\nRuedas:{}\nPuertas: {}\nVelocidad: {}\nCilindrada: {}'.format(self.color, self.ruedas, self.puertas,self.velocidad, self.cilindrada)
 
 
-v = Vehículo('Azul', 4, 3)
+v = Vehiculo('Azul', 4, 3)
 
 c = Coche('Azul', 4, 3,250,300)
 
